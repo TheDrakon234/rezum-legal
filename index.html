@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Rezum – Privacidad y términos</title>
+<style>
+  :root {
+    --bg: #0A0A14; --surface: #12121F; --border: #2D2D44;
+    --indigo: #6366F1; --text: #F1F1F3; --muted: #9CA3AF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .contenedor { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  header { padding-bottom: 20px; border-bottom: 1px solid var(--border); margin-bottom: 28px; }
+  .marca { color: var(--indigo); font-weight: 800; font-size: 28px; letter-spacing: .2px; }
+  nav { margin-top: 12px; display: flex; gap: 16px; flex-wrap: wrap; }
+  nav a { color: var(--indigo); text-decoration: none; font-weight: 600; }
+  nav a:hover { text-decoration: underline; }
+  h1 { font-size: 28px; margin: 40px 0 4px; scroll-margin-top: 16px; }
+  h2 { font-size: 19px; margin: 32px 0 6px; }
+  p, li { color: #D6D6DD; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .fecha { color: var(--muted); font-size: 14px; margin: 0 0 20px; }
+  a { color: var(--indigo); }
+  .caja { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 18px; margin: 16px 0; }
+  .aviso { background: #3a1414; border: 1px solid #7f1d1d; color: #fecaca; border-radius: 12px; padding: 12px 16px; margin-bottom: 24px; display: none; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 48px 0 0; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="contenedor">
+
+  <div class="aviso" id="aviso">
+    Falta completar el correo de contacto y el nombre del responsable en la parte de arriba del archivo (busca <code>PON-AQUI</code>). Esta advertencia desaparece sola cuando lo hagas.
+  </div>
+
+  <header>
+    <div class="marca">Rezum</div>
+    <nav>
+      <a href="#privacidad">Política de privacidad</a>
+      <a href="#terminos">Términos de uso</a>
+      <a href="#eliminar">Eliminar mi cuenta</a>
+    </nav>
+  </header>
+
+  <!-- ===================== POLÍTICA DE PRIVACIDAD ===================== -->
+  <h1 id="privacidad">Política de privacidad</h1>
+  <p class="fecha">Última actualización: 8 de noviembre de 2026</p>
+
+  <p>
+    Rezum es una aplicación para estudiantes que graba tus clases, las transcribe con inteligencia artificial y te ayuda a estudiar con resúmenes, quizzes, un chat y práctica oral.
+    La app es administrada por <span data-responsable></span>. Para cualquier consulta sobre tus datos escribe a <a data-correo></a>.
+  </p>
+
+  <h2>1. Qué datos recopilamos</h2>
+  <ul>
+    <li><strong>Cuenta:</strong> tu correo y tu contraseña (la contraseña se guarda cifrada y nosotros no podemos verla). Si entras con Google, recibimos tu correo y tu nombre desde Google.</li>
+    <li><strong>Perfil:</strong> tu nombre, tu universidad y, si la subes, tu foto de perfil.</li>
+    <li><strong>Contenido que creas:</strong> el texto transcrito de tus clases, los resúmenes, los títulos, el texto leído de las fotos de pizarra y de los documentos que subes, tus conversaciones con el chat de estudio, tus resultados de quizzes y de práctica oral.</li>
+    <li><strong>Uso de la app:</strong> puntos, racha, canjes, minutos de audio usados en el mes y tu código de invitación.</li>
+    <li><strong>Suscripción:</strong> tu plan, las fechas de vencimiento y renovación. El número de tu tarjeta lo maneja directamente Flow; Rezum no lo guarda.</li>
+    <li><strong>Notificaciones:</strong> un identificador de tu dispositivo para enviarte avisos (recordatorios de racha, de pruebas, de tu plan).</li>
+  </ul>
+
+  <h2>2. Cómo usamos tus datos</h2>
+  <ul>
+    <li>Para que la app funcione: transcribir, resumir, generar quizzes y preguntas, y guardar tus apuntes.</li>
+    <li>Para gestionar tu plan, tus cobros y tus límites de uso mensuales.</li>
+    <li>Para mostrar el ranking mensual (aparece tu nombre y tus puntos del mes) y entregar premios.</li>
+    <li>Para enviarte las notificaciones que tengas activadas.</li>
+    <li>Para proteger el servicio de abusos y errores.</li>
+  </ul>
+  <p>No vendemos tus datos ni los usamos para publicidad de terceros.</p>
+
+  <h2>3. El audio de tus clases</h2>
+  <p>
+    Cuando grabas una clase, el audio se envía a nuestro servidor solo para transcribirlo y se descarta al terminar; lo que guardamos es el texto, no el audio.
+    La grabación solo ocurre cuando tú la inicias y mientras ves la notificación de grabación en tu teléfono.
+  </p>
+
+  <h2>4. Servicios externos que participan</h2>
+  <p>Para funcionar, Rezum usa estos proveedores, que procesan datos en nuestro nombre:</p>
+  <ul>
+    <li><strong>Supabase:</strong> cuentas, base de datos y archivos.</li>
+    <li><strong>Groq:</strong> transcripción de audio y generación de resúmenes, quizzes, respuestas del chat y lectura de imágenes. El contenido de tus clases se le envía para ese fin.</li>
+    <li><strong>Flow.cl:</strong> cobro de la suscripción mensual con tarjeta.</li>
+    <li><strong>Google:</strong> inicio de sesión con Google.</li>
+    <li><strong>Expo y Firebase (Google):</strong> envío de notificaciones.</li>
+  </ul>
+  <p>
+    Algunos de estos proveedores tienen servidores fuera de Chile (por ejemplo, en Estados Unidos), por lo que tus datos pueden ser tratados en otros países.
+  </p>
+
+  <h2>5. Cuánto tiempo guardamos tus datos</h2>
+  <p>
+    Guardamos tus datos mientras tu cuenta esté activa. Si pides eliminarla, borramos tu cuenta y tu contenido, salvo lo que la ley nos obligue a conservar
+    (por ejemplo, registros de cobros).
+  </p>
+
+  <h2>6. Tus derechos</h2>
+  <p>
+    Puedes pedir acceso a tus datos, que los corrijamos, que los eliminemos o que dejemos de tratarlos. También puedes pedir una copia.
+    Escríbenos a <a data-correo></a> desde el correo de tu cuenta y respondemos en un plazo máximo de 30 días.
+    Si sientes que no respondimos bien, puedes reclamar ante la autoridad de protección de datos de Chile.
+  </p>
+
+  <h2>7. Seguridad</h2>
+  <p>
+    Las conexiones están cifradas y cada usuario solo puede ver sus propios apuntes. Ningún sistema es 100 % infalible,
+    pero trabajamos para proteger tu información y corregir cualquier problema que detectemos.
+  </p>
+
+  <h2>8. Menores de edad</h2>
+  <p>Rezum está pensada para estudiantes de educación superior y no está dirigida a menores de 14 años.</p>
+
+  <h2>9. Cambios a esta política</h2>
+  <p>Si la modificamos de forma importante, te avisaremos en la app. La fecha de arriba indica la última versión.</p>
+
+  <hr>
+
+  <!-- ===================== TÉRMINOS DE USO ===================== -->
+  <h1 id="terminos">Términos de uso</h1>
+  <p class="fecha">Última actualización: 8 de noviembre de 2026</p>
+
+  <p>Al crear una cuenta o usar Rezum aceptas estos términos. Si no estás de acuerdo, no uses la app.</p>
+
+  <h2>1. El servicio</h2>
+  <p>
+    Rezum te permite grabar clases y obtener su transcripción, resúmenes, quizzes, un chat de estudio y práctica oral generados con inteligencia artificial.
+    Nos esforzamos para que funcione bien, pero el servicio se entrega tal como está y puede tener interrupciones o cambios.
+  </p>
+
+  <h2>2. La IA puede equivocarse</h2>
+  <p>
+    Las transcripciones, los resúmenes y las respuestas se generan automáticamente y pueden contener errores u omisiones.
+    Úsalos como apoyo de estudio y contrasta la información importante con tus materiales y con tu profesor.
+    No somos responsables de decisiones tomadas solo en base a lo que genera la IA.
+  </p>
+
+  <h2>3. Grabar clases: tu responsabilidad</h2>
+  <p>
+    Tú decides qué grabas. Antes de grabar una clase, asegúrate de contar con la autorización de tu profesor o de tu institución cuando sea necesaria
+    y de respetar las normas de tu universidad. No grabes conversaciones privadas de otras personas sin su consentimiento.
+    Eres responsable del contenido que subes o grabas, y del uso que hagas de él.
+  </p>
+
+  <h2>4. Tu cuenta</h2>
+  <p>
+    Debes entregar datos verdaderos y cuidar tu contraseña. Eres responsable de lo que ocurra desde tu cuenta.
+    Una persona puede tener una sola cuenta.
+  </p>
+
+  <h2>5. Planes y pagos</h2>
+  <ul>
+    <li>Rezum tiene un plan Gratis y planes de pago mensuales: Básico, Pro y Pro+. Los precios vigentes se muestran en la pantalla Planes, en pesos chilenos (CLP).</li>
+    <li>Los planes de pago son <strong>suscripciones que se renuevan cada mes</strong> con la tarjeta que registras en Flow, hasta que las canceles.</li>
+    <li>Cada plan incluye una cantidad de horas de audio al mes y otros beneficios. Lo que no uses puede pasar al mes siguiente solo cuando el plan lo indica.</li>
+    <li>Puedes <strong>cancelar cuando quieras</strong> desde la pantalla Planes de la app. Mantienes tu plan hasta el final del período ya pagado y después no se te vuelve a cobrar.</li>
+    <li>Si tienes un problema con un cobro, escríbenos a <a data-correo></a>.</li>
+    <li>Podemos cambiar los precios y los beneficios de los planes; si afectan tu suscripción vigente, te avisaremos antes de la siguiente renovación.</li>
+  </ul>
+
+  <h2>6. Puntos, rachas y premios</h2>
+  <p>
+    Los puntos, rachas y canjes (horas extra, meses de plan, premios del ranking) no tienen valor en dinero ni se pueden transferir.
+    Las reglas para ganarlos pueden cambiar. Los puntos se obtienen solo por uso real de la app; si detectamos abuso o manipulación,
+    podemos quitar puntos o premios y suspender la cuenta.
+  </p>
+
+  <h2>7. Uso aceptable</h2>
+  <p>No puedes:</p>
+  <ul>
+    <li>intentar saltarte los límites de tu plan o alterar la app, el servidor o los puntos;</li>
+    <li>usar la app para contenido ilegal o que dañe a otras personas;</li>
+    <li>compartir o revender tu cuenta ni usar sistemas automáticos para usar el servicio.</li>
+  </ul>
+
+  <h2>8. Tu contenido</h2>
+  <p>
+    El contenido que creas con Rezum sigue siendo tuyo. Nos autorizas solo a procesarlo para entregarte el servicio
+    (guardarlo, transcribirlo, resumirlo y enviarlo a los proveedores indicados en la política de privacidad).
+  </p>
+
+  <h2>9. Suspensión y término</h2>
+  <p>
+    Puedes dejar de usar Rezum y pedir que eliminemos tu cuenta en cualquier momento. Podemos suspender o cerrar cuentas que incumplan estos términos.
+  </p>
+
+  <h2>10. Responsabilidad</h2>
+  <p>
+    En la medida que la ley lo permite, Rezum no responde por daños indirectos ni por pérdidas derivadas del uso o de la imposibilidad de uso del servicio.
+    Esto no limita los derechos que la ley chilena te reconoce como consumidor.
+  </p>
+
+  <h2>11. Cambios y ley aplicable</h2>
+  <p>
+    Podemos actualizar estos términos; si el cambio es importante, te avisaremos en la app.
+    Estos términos se rigen por las leyes de Chile.
+  </p>
+
+  <hr>
+
+  <!-- ===================== ELIMINAR CUENTA ===================== -->
+  <h1 id="eliminar">Eliminar mi cuenta y mis datos</h1>
+  <div class="caja">
+    <p>
+      Para eliminar tu cuenta y todo tu contenido (apuntes, transcripciones, chats, puntos y perfil), escribe a
+      <a data-correo></a> desde el correo con el que te registraste, con el asunto <strong>“Eliminar mi cuenta”</strong>.
+      Lo hacemos en un máximo de 30 días y te confirmamos por correo.
+    </p>
+    <p>
+      Si tienes una suscripción activa, cancélala antes desde la pantalla Planes de la app para que no se te cobre el mes siguiente.
+    </p>
+  </div>
+
+  <footer>
+    Rezum · <span data-responsable></span> · <a data-correo></a>
+  </footer>
+</div>
+
+<script>
+  // ===== COMPLETA ESTAS DOS LÍNEAS ANTES DE PUBLICAR =====
+  const CORREO = 'rezum.contacto@gmail.com'
+  const RESPONSABLE = 'Sebastian Marin (Rezum)'
+  // ======================================================
+
+  document.querySelectorAll('[data-correo]').forEach((el) => {
+    el.textContent = CORREO
+    el.href = 'mailto:' + CORREO
+  })
+  document.querySelectorAll('[data-responsable]').forEach((el) => { el.textContent = RESPONSABLE })
+  if (CORREO.includes('PON-AQUI') || RESPONSABLE.includes('PON-AQUI')) {
+    document.getElementById('aviso').style.display = 'block'
+  }
+</script>
+</body>
+</html>
